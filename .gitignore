@@ -1,0 +1,62 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environment
+venv/
+.env
+.env.*
+
+# IDE/editor configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Byte-compiled / distribution / packaging
+*.egg-info/
+.eggs/
+*.egg
+dist/
+build/
+pip-wheel-metadata/
+
+# Test and coverage outputs
+htmlcov/
+.tox/
+.nox/
+coverage.*
+.cache
+.pytest_cache/
+
+# Docker
+*.log
+docker-compose.override.yml
+# optional: ignore built images locally
+*.tar
+
+# Kubernetes
+k8s/*.yaml.backup
+*.kubeconfig
+*.kube/
+
+# Logs
+logs/
+*.log
+
+# Jupyter notebooks (if ever added)
+.ipynb_checkpoints/
+
+# MyPy / Pylint / Black / Ruff
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
