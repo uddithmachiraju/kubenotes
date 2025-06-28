@@ -5,14 +5,10 @@ In this project I am going to build a notes api completely outoff docker, kubern
 - Docker
 - Kubernetes
 - Flask 
+- Streamlit 
 - logging 
 - pytest
-- PostgreSQL
+- PostgreSQL or MongoDB
 
 ## Features of the project
 Will be written when I start to write down things
-
-### Things I have worked on till now
-- Built a simple Notes API in Python Flask
-    - Routes: `GET` , `POST` , `DELETE` , `UPDATE`
-    - Used in-memory for the API 

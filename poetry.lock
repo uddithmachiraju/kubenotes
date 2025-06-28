@@ -1062,6 +1062,20 @@ watchdog = {version = ">=2.1.5,<7", markers = "platform_system != \"Darwin\""}
 snowflake = ["snowflake-connector-python (>=3.3.0) ; python_version < \"3.12\"", "snowflake-snowpark-python[modin] (>=1.17.0) ; python_version < \"3.12\""]
 
 [[package]]
+name = "streamlit-quill"
+version = "0.0.3"
+description = "Quill component for Streamlit"
+optional = false
+python-versions = ">=3.6"
+groups = ["main"]
+files = [
+    {file = "streamlit_quill-0.0.3-1-py3-none-any.whl", hash = "sha256:6f6851176811be38ce8393951a68afece5effae2aaf26752779d34dc024b7d99"},
+]
+
+[package.dependencies]
+streamlit = ">=0.63"
+
+[[package]]
 name = "tenacity"
 version = "9.1.2"
 description = "Retry code until it succeeds"
@@ -1218,4 +1232,4 @@ watchdog = ["watchdog (>=2.3)"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<4.0"
-content-hash = "35cd498bbd2ea1ec6ce2f85b50e549f72981f92692812e710fc28ae62d408cfb"
+content-hash = "e236668f0dcdf96c1e3fbeefa7042eab2246cd15800da2f4690b1a5e1353ba7c"

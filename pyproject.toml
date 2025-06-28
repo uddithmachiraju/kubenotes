@@ -15,6 +15,7 @@ dependencies = []
 python = ">=3.12,<4.0"
 flask = ">=2.0.0,<3.0.0"
 streamlit = ">=1.0.0,<2.0.0"
+streamlit-quill = "0.0.3" 
 
 [build-system]
 requires = [

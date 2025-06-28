@@ -1,6 +1,6 @@
 # Notes CRUD endpoints
 
-from flask import Blueprint, jsonify
+from flask import Blueprint, jsonify, request 
 
 notes_bp = Blueprint("notes", __name__) 
 
@@ -16,11 +16,17 @@ def list_books():
 # POST - Let you add books
 @notes_bp.route("/", methods = ["POST"])
 def add_note():
+    data = request.get_json()
+    content = data.get("content", "")
+
+    if not content:
+        return jsonify({"error": "Content is required"}), 400
     return jsonify(
         {
-            "message": "This endpoint is gonna add a book into the database"
+            "message": "This endpoint will let you add a new note",
+            "content": content 
         }
-    )
+    ), 201 
 
 # PUT - Let you update the book
 @notes_bp.route("/<id>", methods = ["PUT"])
