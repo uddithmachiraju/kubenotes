@@ -1,0 +1,23 @@
+[project]
+name = "kubenotes"
+version = "0.1.0"
+description = "A Notes application built on top of Kubernetes and Docker with streamlit as frontend and Flask for the backend."
+authors = [
+    {name = "M. Sanjay Uddith Raju"},
+    {email = "uddithmachiraju@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+package_mode = false 
+dependencies = []
+
+[tool.poetry.dependencies] 
+python = ">=3.12,<4.0"
+flask = ">=2.0.0,<3.0.0"
+streamlit = ">=1.0.0,<2.0.0"
+
+[build-system]
+requires = [
+    "poetry-core>=2.0.0,<3.0.0",
+    ]
+build-backend = "poetry.core.masonry.api"
