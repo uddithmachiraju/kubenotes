@@ -1,6 +1,6 @@
 from flask import Flask, jsonify
-from api.notes import notes_bp
-from config.settings import DevelopmentConfig
+from app.api.notes import notes_bp
+from app.config.settings import DevelopmentConfig
 
 app = Flask(__name__) 
 
