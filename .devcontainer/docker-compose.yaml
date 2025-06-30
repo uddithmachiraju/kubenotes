@@ -1,0 +1,32 @@
+services:
+  # This is a Docker Compose file for a development environment with a web application and MongoDB.
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: app_container
+    volumes:
+      - ../.:/workspace
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongodb 
+    command: sleep infinity
+    network_mode: host
+      
+  # MongoDB service
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017" 
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin_sanjay
+      MONGO_INITDB_ROOT_PASSWORD: password
+    volumes:
+      - mongodb_data:/data/db
+    network_mode: host
+
+# Volumes for persistent MongoDB data
+volumes:
+  mongodb_data:
